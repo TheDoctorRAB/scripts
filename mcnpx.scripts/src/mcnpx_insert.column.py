@@ -27,7 +27,7 @@ script,mcnpx_output,text_input=argv
 #
 # open files
 #
-mcnpx_file=numpy.loadtxt(mcnpx_output,dtype=str) 
+mcnpx_file=numpy.loadtxt(mcnpx_output,dtype=str,delimiter='\t') 
 input_file=numpy.loadtxt(text_input) 
 output_file_name=os.path.basename(mcnpx_output)
 #

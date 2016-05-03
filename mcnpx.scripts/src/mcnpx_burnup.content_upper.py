@@ -32,7 +32,7 @@ script,mcnpx_output=argv
 # time and content steps
 #
 content_steps=20 #thorium content from 0.00 to 0.95
-time_steps=30 #not time=0
+time_steps=40 #not time=0
 #
 #######
 #

@@ -5,7 +5,6 @@
 ########################################################################
 # 
 # Interpolates radionuclide mass at critical for selected radionuclide
-# Adds to burnup content file
 #
 ########################################################################
 #
@@ -46,7 +45,7 @@ for line in mcnpx_file:
 #
 for j in range(0,i-1):
     if (mcnpx_file[j,1]>1) and (mcnpx_file[j+1,1]<1):
-	interpolated_mass=(mcnpx_file[j+1,2])+((1.00-mcnpx_file[j+1,1])*(mcnpx_file[j,2]-mcnpx_file[j+1,2]))/(mcnpx_file[j,1]-mcnpx_file[j+1,1])
+	interpolated_mass=(mcnpx_file[j+1,3])+((1.00-mcnpx_file[j+1,1])*(mcnpx_file[j,3]-mcnpx_file[j+1,3]))/(mcnpx_file[j,1]-mcnpx_file[j+1,1])
         interpolated_file.write('\t'+str.format('%.3e'%interpolated_mass)+'\n')
 # end j 
 #

@@ -4,7 +4,7 @@
 # rev.28.January.2016
 ########################################################################
 #
-# Inserts burnup into the file containing radionuclide mass from BURN.
+# Inserts keff into the file containing radionuclide mass from BURN.
 #
 ########################################################################
 #

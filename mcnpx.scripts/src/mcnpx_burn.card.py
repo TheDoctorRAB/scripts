@@ -42,14 +42,14 @@ mcnpx_output_file=os.path.splitext(mcnpx_output_temp)[0]+'_burn.card.out' #same 
 # 
 # open the tally file for writing
 #
-os.chdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogenous.th.u.mixture/output/burn.card/15.00mm_pitch/1500D/dt50/')
+os.chdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogenous.th.u.mixture/output/burn.card/15.00mm_pitch/dt50/2000D')
 time_burnup_file=open(mcnpx_output_file,'w+')
 #
 #######
 #
 # set time steps on BURN card +1 for TIME=0
 #
-time_steps=31
+time_steps=41
 #
 #######
 #
