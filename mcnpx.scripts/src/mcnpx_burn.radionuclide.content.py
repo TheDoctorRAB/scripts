@@ -39,10 +39,10 @@ mcnpx_output_file=os.path.splitext(mcnpx_output_temp)[0]+'_radionuclide.content.
 #
 # open the tally file for writing
 #
-os.chdir('../../../radionuclide.content/12.54mm_pitch/dt50') #verify directory location and radionuclide
+os.chdir('../../../../radionuclide.content/12.54mm_pitch/dt50/2000D') #verify directory location and radionuclide
 print 'Current directory path is: ',os.getcwd(),'for' ,zaid
-raw_input('Go/NoGo')
-dir_check=os.path.isdir('../../../radionuclide.content/12.54mm_pitch/dt50/'+zaid) #check if directory exists
+#raw_input('Go/NoGo')
+dir_check=os.path.isdir('../../../../radionuclide.content/12.54mm_pitch/dt50/2000D/'+zaid) #check if directory exists
 #
 if(dir_check==False):
     os.mkdir(zaid)
