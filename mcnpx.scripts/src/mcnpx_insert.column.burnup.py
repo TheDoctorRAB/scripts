@@ -45,7 +45,7 @@ for line in burnup_file:
 # add data column
 #
 for j in range(0,i):
-    mcnpx_file[j,4]=burnup_file[j,8] #column 4 in the radionuclide content file only holds specific activity so nbd to overwrite
+    mcnpx_file[j,2]=burnup_file[j,8] #column 2 in the radionuclide content file only holds zaid 
 # end j
 #
 #######
