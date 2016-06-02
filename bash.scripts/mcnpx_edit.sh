@@ -1,0 +1,21 @@
+#!/bin/bash
+python mcnpx_edit.py fuel.oxide_th0.inp
+python mcnpx_edit.py fuel.oxide_th5.inp
+python mcnpx_edit.py fuel.oxide_th10.inp
+python mcnpx_edit.py fuel.oxide_th15.inp
+python mcnpx_edit.py fuel.oxide_th20.inp
+python mcnpx_edit.py fuel.oxide_th25.inp
+python mcnpx_edit.py fuel.oxide_th30.inp
+python mcnpx_edit.py fuel.oxide_th35.inp
+python mcnpx_edit.py fuel.oxide_th40.inp
+python mcnpx_edit.py fuel.oxide_th45.inp
+python mcnpx_edit.py fuel.oxide_th50.inp
+python mcnpx_edit.py fuel.oxide_th55.inp
+python mcnpx_edit.py fuel.oxide_th60.inp
+python mcnpx_edit.py fuel.oxide_th65.inp
+python mcnpx_edit.py fuel.oxide_th70.inp
+python mcnpx_edit.py fuel.oxide_th75.inp
+python mcnpx_edit.py fuel.oxide_th80.inp
+python mcnpx_edit.py fuel.oxide_th85.inp
+python mcnpx_edit.py fuel.oxide_th90.inp
+python mcnpx_edit.py fuel.oxide_th95.inp

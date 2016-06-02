@@ -39,10 +39,23 @@ mcnpx_output_temp=os.path.splitext(mcnpx_output)[0] #separates filename.suffix, 
 mcnpx_output_file=os.path.splitext(mcnpx_output_temp)[0]+'_burn.card.out' #same thing, these particular files were filename.suffix1.suffix2
 #
 #######
-# 
+#
+# make directory
+#
+dir_check=os.path.isdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/burn.card/12.54mm_pitch_3.9mmm_pin/dt50/2000D') #check if directory exists
+print dir_check
+#
+if(dir_check==False):
+    os.mkdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/burn.card/12.54mm_pitch_3.9mmm_pin')
+    os.mkdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/burn.card/12.54mm_pitch_3.9mmm_pin/dt50')
+    os.mkdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/burn.card/12.54mm_pitch_3.9mmm_pin/dt50/2000D')
+# end if
+#
+#######
+#
 # open the tally file for writing
 #
-os.chdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogenous.th.u.mixture/output/burn.card/15.00mm_pitch/dt50/2000D')
+os.chdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/burn.card/12.54mm_pitch_3.9mmm_pin/dt50/2000D')
 time_burnup_file=open(mcnpx_output_file,'w+')
 #
 #######
