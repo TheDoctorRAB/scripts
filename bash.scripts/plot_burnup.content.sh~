@@ -1,0 +1,3 @@
+#!/bin/bash
+python /media/sf_home/usr/borrelli/plot/src/plot_all.in.one_burnup.content.py /media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/burnup.content/13.2mm_pitch/burnup.content.out
+mv *.png /media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/burnup.content/13.2mm_pitch/

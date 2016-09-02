@@ -110,3 +110,4 @@ python mcnpx_insert.column.py fuel.oxide_th80_radionuclide.content.out insert.co
 python mcnpx_insert.column.py fuel.oxide_th85_radionuclide.content.out insert.column.inp
 python mcnpx_insert.column.py fuel.oxide_th90_radionuclide.content.out insert.column.inp
 python mcnpx_insert.column.py fuel.oxide_th95_radionuclide.content.out insert.column.inp
+rm mcnpx_insert.column.py insert.column.inp

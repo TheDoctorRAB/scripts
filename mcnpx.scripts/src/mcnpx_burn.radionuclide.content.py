@@ -37,16 +37,25 @@ mcnpx_output_file=os.path.splitext(mcnpx_output_temp)[0]+'_radionuclide.content.
 #
 #######
 #
-# open the tally file for writing
+# 
+# directory logistics
 #
-os.chdir('../../../../radionuclide.content/12.54mm_pitch/dt50/2000D') #verify directory location and radionuclide
-print 'Current directory path is: ',os.getcwd(),'for' ,zaid
-#raw_input('Go/NoGo')
-dir_check=os.path.isdir('../../../../radionuclide.content/12.54mm_pitch/dt50/2000D/'+zaid) #check if directory exists
+dir_check=os.path.isdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/radionuclide.content/13.2mm_pitch/dt50/2000D') #check if dir exists
+print dir_check
 #
 if(dir_check==False):
+    os.mkdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/radionuclide.content/13.2mm_pitch/dt50')
+    os.mkdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/radionuclide.content/13.2mm_pitch/dt50/2000D')
+#end if
+#
+os.chdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/radionuclide.content/13.2mm_pitch/dt50/2000D') 
+print 'Current directory path is: ',os.getcwd(),'for',zaid
+zaid_dir_check=os.path.isdir('/media/sf_home/usr/borrelli/mcnpx.decks/thorium.uranium.fuel/homogeneous.th.u.mixture/output/radionuclide.content/13.2mm_pitch/dt50/2000D/'+zaid) #check if directory exists
+print zaid_dir_check
+#
+if(zaid_dir_check==False):
     os.mkdir(zaid)
-# end if
+#end if
 #
 os.chdir(zaid)
 radionuclide_content_file=open(mcnpx_output_file,'w+')

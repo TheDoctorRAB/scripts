@@ -1,4 +1,5 @@
 #!/bin/bash
+# run in raw directory
 python mcnpx_burn.radionuclide.content.py fuel.oxide_th0.inp.o 94239
 python mcnpx_burn.radionuclide.content.py fuel.oxide_th5.inp.o 94239
 python mcnpx_burn.radionuclide.content.py fuel.oxide_th10.inp.o 94239
