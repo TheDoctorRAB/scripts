@@ -17,7 +17,7 @@ scale_file=open(scale_output,'r').readlines()
 #######
 #
 ####### prepare output file
-scale_output_file=os.path.splitext(scale_output)[0]+'_decay.heat.out'
+scale_output_file=os.path.splitext(scale_output)[0]+'_mass.out'
 #######
 #
 ###### open file for writing
@@ -30,7 +30,7 @@ extract=False
 #
 ###### extract data
 for line in scale_file:
-    if line.strip() == "=   Nuclide concentrations in watts for case 'decay' (#2/2)                                                             =":
+    if line.strip() == "=   Nuclide concentrations in grams for case 'decay' (#2/2)                                                             =":
         extract = True
     elif line.strip() == "=========================================================================================================================":
         extract = False
