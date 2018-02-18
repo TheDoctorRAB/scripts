@@ -17,7 +17,7 @@ scale_file=open(scale_output,'r').readlines()
 #######
 #
 ####### prepare output file
-scale_output_file=os.path.splitext(scale_output)[0]+'_mass.out'
+scale_output_file=os.path.splitext(scale_output)[0]+'_weight.faction.out'
 #######
 #
 ###### open file for writing
