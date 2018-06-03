@@ -17,14 +17,15 @@
 import os
 import numpy
 from sys import argv
-script,datafile=argv
+script,timefile,datafile=argv
 #
 #######
 #
 # read data files
 #
-labels=numpy.genfromtxt(datafile,dtype=str,usecols=[0])
+labels=numpy.genfromtxt(datafile,dtype=object,usecols=[0])
 raw_data=numpy.genfromtxt(datafile,dtype=float)[:,1:]
+time=numpy.genfromtxt(timefile,dtype=str) #read in as string because time step is used as output file label
 #
 #######
 #
@@ -34,12 +35,6 @@ rows=labels.shape[0]
 columns=raw_data.shape[1]
 #
 #######
-#
-# prepare output file
-#
-material_card_file=os.path.splitext(datafile)[0]+'_material.card.out'
-#
-######
 #
 # compute weight fraction
 #
@@ -51,15 +46,24 @@ for i in range (0,rows):
 #
 #######
 #
-# combine
+# write weight fractions above prescribed cutoff to new file
 #
-material_card=numpy.c_[labels,weight_fraction] #saves as strings
+cutoff=1E-06
 #
-######
+for j in range(0,columns):
+###
 #
-# save file
+# open material card
 #
-numpy.savetxt(material_card_file,material_card,fmt='%s',delimiter='\t')
+  material_card=open(os.path.splitext(datafile)[0]+'_material.card_'+time[j]+'.out','w+')
+#
+###
+#
+  for i in range(0,rows):
+   if(abs(weight_fraction[i,j])>cutoff):
+    material_card.write(str.format('%s'%labels[i])+'\t\t\t'+str.format('%.6e'%weight_fraction[i,j])+'\n')
+#
+  material_card.close()
 #
 #######
 # EOF
