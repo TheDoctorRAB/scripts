@@ -16,7 +16,9 @@
 # imports
 import os
 import numpy
+import pyne
 from sys import argv
+from pyne import nucname
 script,timefile,datafile=argv
 #
 #######
@@ -45,6 +47,11 @@ for i in range (0,rows):
      weight_fraction[i,j]=raw_data[i,j]*(-1)*1E-06 #negative is added here because MCNP uses (-) for weight fraction
 #
 #######
+#
+# change to ZAID
+#
+for i in range (0,rows):
+  labels[i]=str(pyne.nucname.zzzaaa(labels[i]))+'.66c'
 #
 # write weight fractions above prescribed cutoff to new file
 #
