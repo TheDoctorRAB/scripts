@@ -51,7 +51,7 @@ for i in range (0,rows):
 # change to ZAID
 #
 for i in range (0,rows):
-  labels[i]=str(pyne.nucname.zzzaaa(labels[i]))+'.66c'
+  labels[i]=str(pyne.nucname.zzzaaa(labels[i]))+'.70c'
 #
 # write weight fractions above prescribed cutoff to new file
 #
