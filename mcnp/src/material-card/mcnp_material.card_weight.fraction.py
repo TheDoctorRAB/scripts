@@ -68,7 +68,7 @@ for j in range(0,columns):
 #
   for i in range(0,rows):
    if(abs(weight_fraction[i,j])>cutoff):
-    material_card.write(str.format('%s'%labels[i])+'     '+str.format('%.6e'%weight_fraction[i,j])+'\n')
+    material_card.write('        '+str.format('%s'%labels[i])+'     '+str.format('%.6e'%weight_fraction[i,j])+'\n')
 #
   material_card.close()
 #

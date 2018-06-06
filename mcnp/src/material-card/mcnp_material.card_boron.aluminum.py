@@ -25,7 +25,7 @@ carbon_weight_percent=0.217390 #carbon in boron carbide
 #
 # calculations
 #
-bc_weight_percent=0.90 #variable wt% in borated aluminum compund
+bc_weight_percent=0.10 #variable wt% in borated aluminum compund
 al_weight_percent=1-bc_weight_percent
 #
 density=((bc_weight_percent/boron_carbide_density)+(al_weight_percent/aluminum_density))**(-1) #principle of additive volumes
