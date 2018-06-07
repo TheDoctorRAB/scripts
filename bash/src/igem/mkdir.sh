@@ -1,0 +1,17 @@
+mkdir 10wt 30wt 50wt 70wt 90wt submaster-inp
+mkdir 10wt/1.5cm 10wt/3cm 10wt/6cm 10wt/12cm 10wt/18cm 10wt/30cm
+mkdir 30wt/1.5cm 30wt/3cm 30wt/6cm 30wt/12cm 30wt/18cm 30wt/30cm
+mkdir 50wt/1.5cm 50wt/3cm 50wt/6cm 50wt/12cm 50wt/18cm 50wt/30cm
+mkdir 70wt/1.5cm 70wt/3cm 70wt/6cm 70wt/12cm 70wt/18cm 70wt/30cm
+mkdir 90wt/1.5cm 90wt/3cm 90wt/6cm 90wt/12cm 90wt/18cm 90wt/30cm
+mkdir submaster-inp/1.5cm submaster-inp/3cm submaster-inp/6cm submaster-inp/12cm submaster-inp/18cm submaster-inp/30cm
+mkdir 10wt/1.5cm/inp 10wt/3cm/inp 10wt/6cm/inp 10wt/12cm/inp 10wt/18cm/inp 10wt/30cm/inp
+mkdir 30wt/1.5cm/inp 30wt/3cm/inp 30wt/6cm/inp 30wt/12cm/inp 30wt/18cm/inp 30wt/30cm/inp
+mkdir 50wt/1.5cm/inp 50wt/3cm/inp 50wt/6cm/inp 50wt/12cm/inp 50wt/18cm/inp 50wt/30cm/inp
+mkdir 70wt/1.5cm/inp 70wt/3cm/inp 70wt/6cm/inp 70wt/12cm/inp 70wt/18cm/inp 70wt/30cm/inp
+mkdir 90wt/1.5cm/inp 90wt/3cm/inp 90wt/6cm/inp 90wt/12cm/inp 90wt/18cm/inp 90wt/30cm/inp
+mkdir 10wt/1.5cm/out 10wt/3cm/inp 10wt/6cm/inp 10wt/12cm/inp 10wt/18cm/inp 10wt/30cm/inp
+mkdir 30wt/1.5cm/out 30wt/3cm/inp 30wt/6cm/inp 30wt/12cm/inp 30wt/18cm/inp 30wt/30cm/inp
+mkdir 50wt/1.5cm/out 50wt/3cm/inp 50wt/6cm/inp 50wt/12cm/inp 50wt/18cm/inp 50wt/30cm/inp
+mkdir 70wt/1.5cm/out 70wt/3cm/inp 70wt/6cm/inp 70wt/12cm/inp 70wt/18cm/inp 70wt/30cm/inp
+mkdir 90wt/1.5cm/out 90wt/3cm/inp 90wt/6cm/inp 90wt/12cm/inp 90wt/18cm/inp 90wt/30cm/inp
