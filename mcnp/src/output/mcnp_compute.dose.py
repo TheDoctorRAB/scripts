@@ -30,7 +30,8 @@ columns=raw_data.shape[1]
 #
 # input neutron emisson rate
 #
-neutron_emission_rate=1.1410E+08
+neutron_emission_rate=1.1410E+08   #L-3030
+# neutron_emission_rate=8.8398E+08 #H-5060
 #
 #######
 #
@@ -45,6 +46,29 @@ for i in range (0,rows):
 #
 #######
 #
+# prepare thickness column
+#
+thickness=numpy.array([1.50,3.00,6.00,12.0,18.0,30.0,60.0])
+#
+#######
+#
+# make new data array
+#
+newdata=numpy.zeros((rows,columns+1))
+#
+#######
+#
+# write new data
+#
+for j in range (0,(columns+1)):
+  for i in range (0,rows):
+    if (j==0):
+      newdata[i,j]=thickness[i]
+    else:
+      newdata[i,j]=raw_data[i,j-1]
+#
+#######
+#
 # open file to write
 #
 dose_rate=os.path.splitext(datafile)[0]+'_dose.rate'+'.out'
@@ -53,7 +77,7 @@ dose_rate=os.path.splitext(datafile)[0]+'_dose.rate'+'.out'
 #
 # write to file
 #
-numpy.savetxt(dose_rate,raw_data,fmt='%.4e')
+numpy.savetxt(dose_rate,newdata,fmt='%.4e')
 #
 #######
 # EOF
