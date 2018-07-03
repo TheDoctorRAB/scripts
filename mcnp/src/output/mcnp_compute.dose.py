@@ -30,8 +30,10 @@ columns=raw_data.shape[1]
 #
 # input neutron emisson rate
 #
-neutron_emission_rate=1.1410E+08   #L-3030
-# neutron_emission_rate=8.8398E+08 #H-5060
+print 'make sure you have the right neutron emission rate selected!'
+#
+#neutron_emission_rate=1.1410E+08   #L-3030
+neutron_emission_rate=8.8398E+08    #H-5060
 #
 #######
 #
