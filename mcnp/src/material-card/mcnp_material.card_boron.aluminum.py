@@ -18,29 +18,40 @@ script=argv
 boron_carbide_density=2.52  #g/cc
 aluminum_density=2.6989     #g/cc
 #
-boron_weight_percent=0.782610    #boron in boron carbide
-carbon_weight_percent=0.217390 #carbon in boron carbide
+total_boron_weight_fraction=0.782610    #total boron in boron carbide
+carbon_weight_fraction=0.217390         #carbon in boron carbide
+#
+#######
+#
+# user set parameters
+#
+boron10_weight_fraction=float(raw_input('boron 10 weight fraction: '))
+boron11_weight_fraction=1-boron10_weight_fraction
+#
+bc_weight_fraction=float(raw_input('total boron carbide weight fraction: ')) #total boron carbide weight fraction in B4C-aluminum compound
+al_weight_fraction=1-bc_weight_fraction
 #
 #######
 #
 # calculations
 #
-bc_weight_percent=0.10 #variable wt% in borated aluminum compund
-al_weight_percent=1-bc_weight_percent
+density=((bc_weight_fraction/boron_carbide_density)+(al_weight_fraction/aluminum_density))**(-1) #principle of additive volumes
 #
-density=((bc_weight_percent/boron_carbide_density)+(al_weight_percent/aluminum_density))**(-1) #principle of additive volumes
-#
-boron_al_weight_percent=bc_weight_percent*boron_weight_percent
-carbon_al_weight_percent=bc_weight_percent*carbon_weight_percent
+boron10_al_weight_fraction=boron10_weight_fraction*bc_weight_fraction*total_boron_weight_fraction #boron 10 weight fraction in B4C-aluminum compound
+boron11_al_weight_fraction=boron11_weight_fraction*bc_weight_fraction*total_boron_weight_fraction #boron 11 weight fraction in B4C-aluminum compound
+carbon_al_weight_fraction=bc_weight_fraction*carbon_weight_fraction #carbon weight fraction in B4C-aluminum compound
 #
 #######
 #
 # print to screen
 #
-print density
-print '5011.66c  ',boron_al_weight_percent
-print '6012.66c  ',carbon_al_weight_percent
-print '13027.66c  ',al_weight_percent
+print bc_weight_fraction
+print '%.5f'%density
+print '5010.66c   ','%.6f'%-boron10_al_weight_fraction
+print '5011.66c   ','%.6f'%-boron11_al_weight_fraction
+print '6012.66c   ','%.6f'%-carbon_al_weight_fraction
+print '13027.66c  ','%.6f'%-al_weight_fraction
+print boron10_al_weight_fraction+boron11_al_weight_fraction+carbon_al_weight_fraction+al_weight_fraction
 #
 #######
 # EOF
