@@ -193,8 +193,8 @@ mcnpwrite_tally02=open('single.assembly_7815_west.plate.out','a')
 mcnpwrite_tally12=open('single.assembly_7815_east.plate.out','a')
 mcnpwrite_tally22=open('single.assembly_7815_south.plate.out','a')
 mcnpwrite_tally32=open('single.assembly_7815_north.plate.out','a')
-mcnpwrite_tally42=open('single.assembly_7815_cap.plate.out','a')
-mcnpwrite_tally52=open('single.assembly_7815_plug.plate.out','a')
+mcnpwrite_tally42=open('single.assembly_7815_cap.out','a')
+mcnpwrite_tally52=open('single.assembly_7815_plug.out','a')
 #
 #######
 #
