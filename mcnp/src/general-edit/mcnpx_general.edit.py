@@ -10,18 +10,18 @@
 #
 #
 #######
-# 
+#
 # imports
 #
 from sys import argv
 script,mcnp_input=argv
 #
 #######
-# 
+#
 # set the line to be edited
 #
 new_line=
-'BURN   TIME=50 50 50 50 50 50 50 50 50 50 
+'BURN   TIME=50 50 50 50 50 50 50 50 50 50
              50 50 50 50 50 50 50 50 50 50
              50 50 50 50 50 50 50 50 50 50
              50 50 50 50 50 50 50 50 50 50
@@ -31,37 +31,37 @@ new_line=
               1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0 1.0'+'\n'
 #
 #######
-# 
+#
 # open mcnp deck
 #
 mcnp_infile=open(mcnp_input,'r')
 #
 #######
-# 
+#
 # find the original line
 #
 for line in mcnp_infile:
   if 'OMIT' in line:
     old_line=line
-# endif  
+# endif
 # end line
 #
 #######
-# 
+#
 # close mcnp deck
 #
 mcnp_infile.close()
 #
 #######
-# 
+#
 # open the mcnp deck and read
 # this is ok because the input files for mcnp are small for memory
 #
 mcnp_tempfile=open(mcnp_input,'r').read()
 #
 #######
-# 
-# replace 
+#
+# replace
 #
 mcnp_tempfile=mcnp_tempfile.replace(old_line,new_line)
 #
