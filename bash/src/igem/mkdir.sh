@@ -1,17 +1,222 @@
-mkdir 10wt 30wt 50wt 70wt 90wt submaster-inp
-mkdir 10wt/1.5cm 10wt/3cm 10wt/6cm 10wt/12cm 10wt/18cm 10wt/30cm
-mkdir 30wt/1.5cm 30wt/3cm 30wt/6cm 30wt/12cm 30wt/18cm 30wt/30cm
-mkdir 50wt/1.5cm 50wt/3cm 50wt/6cm 50wt/12cm 50wt/18cm 50wt/30cm
-mkdir 70wt/1.5cm 70wt/3cm 70wt/6cm 70wt/12cm 70wt/18cm 70wt/30cm
-mkdir 90wt/1.5cm 90wt/3cm 90wt/6cm 90wt/12cm 90wt/18cm 90wt/30cm
-mkdir submaster-inp/1.5cm submaster-inp/3cm submaster-inp/6cm submaster-inp/12cm submaster-inp/18cm submaster-inp/30cm
-mkdir 10wt/1.5cm/inp 10wt/3cm/inp 10wt/6cm/inp 10wt/12cm/inp 10wt/18cm/inp 10wt/30cm/inp
-mkdir 30wt/1.5cm/inp 30wt/3cm/inp 30wt/6cm/inp 30wt/12cm/inp 30wt/18cm/inp 30wt/30cm/inp
-mkdir 50wt/1.5cm/inp 50wt/3cm/inp 50wt/6cm/inp 50wt/12cm/inp 50wt/18cm/inp 50wt/30cm/inp
-mkdir 70wt/1.5cm/inp 70wt/3cm/inp 70wt/6cm/inp 70wt/12cm/inp 70wt/18cm/inp 70wt/30cm/inp
-mkdir 90wt/1.5cm/inp 90wt/3cm/inp 90wt/6cm/inp 90wt/12cm/inp 90wt/18cm/inp 90wt/30cm/inp
-mkdir 10wt/1.5cm/out 10wt/3cm/inp 10wt/6cm/inp 10wt/12cm/inp 10wt/18cm/inp 10wt/30cm/inp
-mkdir 30wt/1.5cm/out 30wt/3cm/inp 30wt/6cm/inp 30wt/12cm/inp 30wt/18cm/inp 30wt/30cm/inp
-mkdir 50wt/1.5cm/out 50wt/3cm/inp 50wt/6cm/inp 50wt/12cm/inp 50wt/18cm/inp 50wt/30cm/inp
-mkdir 70wt/1.5cm/out 70wt/3cm/inp 70wt/6cm/inp 70wt/12cm/inp 70wt/18cm/inp 70wt/30cm/inp
-mkdir 90wt/1.5cm/out 90wt/3cm/inp 90wt/6cm/inp 90wt/12cm/inp 90wt/18cm/inp 90wt/30cm/inp
+mkdir 0wt/10wt/18cm/out
+mkdir 0wt/30wt/18cm/out
+mkdir 0wt/50wt/18cm/out
+mkdir 0wt/70wt/18cm/out
+mkdir 0wt/90wt/18cm/out
+
+mkdir 10wt/10wt/18cm/out
+mkdir 10wt/30wt/18cm/out
+mkdir 10wt/50wt/18cm/out
+mkdir 10wt/70wt/18cm/out
+mkdir 10wt/90wt/18cm/out
+
+mkdir 25wt/10wt/18cm/out
+mkdir 25wt/30wt/18cm/out
+mkdir 25wt/50wt/18cm/out
+mkdir 25wt/70wt/18cm/out
+mkdir 25wt/90wt/18cm/out
+
+mkdir 50wt/10wt/18cm/out
+mkdir 50wt/30wt/18cm/out
+mkdir 50wt/50wt/18cm/out
+mkdir 50wt/70wt/18cm/out
+mkdir 50wt/90wt/18cm/out
+
+mkdir 5wt/10wt/18cm/out
+mkdir 5wt/30wt/18cm/out
+mkdir 5wt/50wt/18cm/out
+mkdir 5wt/70wt/18cm/out
+mkdir 5wt/90wt/18cm/out
+
+mkdir 75wt/10wt/18cm/out
+mkdir 75wt/30wt/18cm/out
+mkdir 75wt/50wt/18cm/out
+mkdir 75wt/70wt/18cm/out
+mkdir 75wt/90wt/18cm/out
+
+mv 0wt/10wt/1.5cm/inp/*.o 0wt/10wt/1.5cm/out/
+mv 0wt/30wt/1.5cm/inp/*.o 0wt/30wt/1.5cm/out/
+mv 0wt/50wt/1.5cm/inp/*.o 0wt/50wt/1.5cm/out/
+mv 0wt/70wt/1.5cm/inp/*.o 0wt/70wt/1.5cm/out/
+mv 0wt/90wt/1.5cm/inp/*.o 0wt/90wt/1.5cm/out/
+mv 10wt/10wt/1.5cm/inp/*.o 10wt/10wt/1.5cm/out/
+mv 10wt/30wt/1.5cm/inp/*.o 10wt/30wt/1.5cm/out/
+mv 10wt/50wt/1.5cm/inp/*.o 10wt/50wt/1.5cm/out/
+mv 10wt/70wt/1.5cm/inp/*.o 10wt/70wt/1.5cm/out/
+mv 10wt/90wt/1.5cm/inp/*.o 10wt/90wt/1.5cm/out/
+mv 25wt/10wt/1.5cm/inp/*.o 25wt/10wt/1.5cm/out/
+mv 25wt/30wt/1.5cm/inp/*.o 25wt/30wt/1.5cm/out/
+mv 25wt/50wt/1.5cm/inp/*.o 25wt/50wt/1.5cm/out/
+mv 25wt/70wt/1.5cm/inp/*.o 25wt/70wt/1.5cm/out/
+mv 25wt/90wt/1.5cm/inp/*.o 25wt/90wt/1.5cm/out/
+mv 50wt/10wt/1.5cm/inp/*.o 50wt/10wt/1.5cm/out/
+mv 50wt/30wt/1.5cm/inp/*.o 50wt/30wt/1.5cm/out/
+mv 50wt/50wt/1.5cm/inp/*.o 50wt/50wt/1.5cm/out/
+mv 50wt/70wt/1.5cm/inp/*.o 50wt/70wt/1.5cm/out/
+mv 50wt/90wt/1.5cm/inp/*.o 50wt/90wt/1.5cm/out/
+mv 5wt/10wt/1.5cm/inp/*.o 5wt/10wt/1.5cm/out/
+mv 5wt/30wt/1.5cm/inp/*.o 5wt/30wt/1.5cm/out/
+mv 5wt/50wt/1.5cm/inp/*.o 5wt/50wt/1.5cm/out/
+mv 5wt/70wt/1.5cm/inp/*.o 5wt/70wt/1.5cm/out/
+mv 5wt/90wt/1.5cm/inp/*.o 5wt/90wt/1.5cm/out/
+mv 75wt/10wt/1.5cm/inp/*.o 75wt/10wt/1.5cm/out/
+mv 75wt/30wt/1.5cm/inp/*.o 75wt/30wt/1.5cm/out/
+mv 75wt/50wt/1.5cm/inp/*.o 75wt/50wt/1.5cm/out/
+mv 75wt/70wt/1.5cm/inp/*.o 75wt/70wt/1.5cm/out/
+mv 75wt/90wt/1.5cm/inp/*.o 75wt/90wt/1.5cm/out/
+
+mv 0wt/10wt/3cm/inp/*.o 0wt/10wt/3cm/out/
+mv 0wt/30wt/3cm/inp/*.o 0wt/30wt/3cm/out/
+mv 0wt/50wt/3cm/inp/*.o 0wt/50wt/3cm/out/
+mv 0wt/70wt/3cm/inp/*.o 0wt/70wt/3cm/out/
+mv 0wt/90wt/3cm/inp/*.o 0wt/90wt/3cm/out/
+mv 10wt/10wt/3cm/inp/*.o 10wt/10wt/3cm/out/
+mv 10wt/30wt/3cm/inp/*.o 10wt/30wt/3cm/out/
+mv 10wt/50wt/3cm/inp/*.o 10wt/50wt/3cm/out/
+mv 10wt/70wt/3cm/inp/*.o 10wt/70wt/3cm/out/
+mv 10wt/90wt/3cm/inp/*.o 10wt/90wt/3cm/out/
+mv 25wt/10wt/3cm/inp/*.o 25wt/10wt/3cm/out/
+mv 25wt/30wt/3cm/inp/*.o 25wt/30wt/3cm/out/
+mv 25wt/50wt/3cm/inp/*.o 25wt/50wt/3cm/out/
+mv 25wt/70wt/3cm/inp/*.o 25wt/70wt/3cm/out/
+mv 25wt/90wt/3cm/inp/*.o 25wt/90wt/3cm/out/
+mv 50wt/10wt/3cm/inp/*.o 50wt/10wt/3cm/out/
+mv 50wt/30wt/3cm/inp/*.o 50wt/30wt/3cm/out/
+mv 50wt/50wt/3cm/inp/*.o 50wt/50wt/3cm/out/
+mv 50wt/70wt/3cm/inp/*.o 50wt/70wt/3cm/out/
+mv 50wt/90wt/3cm/inp/*.o 50wt/90wt/3cm/out/
+mv 5wt/10wt/3cm/inp/*.o 5wt/10wt/3cm/out/
+mv 5wt/30wt/3cm/inp/*.o 5wt/30wt/3cm/out/
+mv 5wt/50wt/3cm/inp/*.o 5wt/50wt/3cm/out/
+mv 5wt/70wt/3cm/inp/*.o 5wt/70wt/3cm/out/
+mv 5wt/90wt/3cm/inp/*.o 5wt/90wt/3cm/out/
+mv 75wt/10wt/3cm/inp/*.o 75wt/10wt/3cm/out/
+mv 75wt/30wt/3cm/inp/*.o 75wt/30wt/3cm/out/
+mv 75wt/50wt/3cm/inp/*.o 75wt/50wt/3cm/out/
+mv 75wt/70wt/3cm/inp/*.o 75wt/70wt/3cm/out/
+mv 75wt/90wt/3cm/inp/*.o 75wt/90wt/3cm/out/
+
+mv 0wt/10wt/6cm/inp/*.o 0wt/10wt/6cm/out/
+mv 0wt/30wt/6cm/inp/*.o 0wt/30wt/6cm/out/
+mv 0wt/50wt/6cm/inp/*.o 0wt/50wt/6cm/out/
+mv 0wt/70wt/6cm/inp/*.o 0wt/70wt/6cm/out/
+mv 0wt/90wt/6cm/inp/*.o 0wt/90wt/6cm/out/
+mv 10wt/10wt/6cm/inp/*.o 10wt/10wt/6cm/out/
+mv 10wt/30wt/6cm/inp/*.o 10wt/30wt/6cm/out/
+mv 10wt/50wt/6cm/inp/*.o 10wt/50wt/6cm/out/
+mv 10wt/70wt/6cm/inp/*.o 10wt/70wt/6cm/out/
+mv 10wt/90wt/6cm/inp/*.o 10wt/90wt/6cm/out/
+mv 25wt/10wt/6cm/inp/*.o 25wt/10wt/6cm/out/
+mv 25wt/30wt/6cm/inp/*.o 25wt/30wt/6cm/out/
+mv 25wt/50wt/6cm/inp/*.o 25wt/50wt/6cm/out/
+mv 25wt/70wt/6cm/inp/*.o 25wt/70wt/6cm/out/
+mv 25wt/90wt/6cm/inp/*.o 25wt/90wt/6cm/out/
+mv 50wt/10wt/6cm/inp/*.o 50wt/10wt/6cm/out/
+mv 50wt/30wt/6cm/inp/*.o 50wt/30wt/6cm/out/
+mv 50wt/50wt/6cm/inp/*.o 50wt/50wt/6cm/out/
+mv 50wt/70wt/6cm/inp/*.o 50wt/70wt/6cm/out/
+mv 50wt/90wt/6cm/inp/*.o 50wt/90wt/6cm/out/
+mv 5wt/10wt/6cm/inp/*.o 5wt/10wt/6cm/out/
+mv 5wt/30wt/6cm/inp/*.o 5wt/30wt/6cm/out/
+mv 5wt/50wt/6cm/inp/*.o 5wt/50wt/6cm/out/
+mv 5wt/70wt/6cm/inp/*.o 5wt/70wt/6cm/out/
+mv 5wt/90wt/6cm/inp/*.o 5wt/90wt/6cm/out/
+mv 75wt/10wt/6cm/inp/*.o 75wt/10wt/6cm/out/
+mv 75wt/30wt/6cm/inp/*.o 75wt/30wt/6cm/out/
+mv 75wt/50wt/6cm/inp/*.o 75wt/50wt/6cm/out/
+mv 75wt/70wt/6cm/inp/*.o 75wt/70wt/6cm/out/
+mv 75wt/90wt/6cm/inp/*.o 75wt/90wt/6cm/out/
+
+mv 0wt/10wt/12cm/inp/*.o 0wt/10wt/12cm/out/
+mv 0wt/30wt/12cm/inp/*.o 0wt/30wt/12cm/out/
+mv 0wt/50wt/12cm/inp/*.o 0wt/50wt/12cm/out/
+mv 0wt/70wt/12cm/inp/*.o 0wt/70wt/12cm/out/
+mv 0wt/90wt/12cm/inp/*.o 0wt/90wt/12cm/out/
+mv 10wt/10wt/12cm/inp/*.o 10wt/10wt/12cm/out/
+mv 10wt/30wt/12cm/inp/*.o 10wt/30wt/12cm/out/
+mv 10wt/50wt/12cm/inp/*.o 10wt/50wt/12cm/out/
+mv 10wt/70wt/12cm/inp/*.o 10wt/70wt/12cm/out/
+mv 10wt/90wt/12cm/inp/*.o 10wt/90wt/12cm/out/
+mv 25wt/10wt/12cm/inp/*.o 25wt/10wt/12cm/out/
+mv 25wt/30wt/12cm/inp/*.o 25wt/30wt/12cm/out/
+mv 25wt/50wt/12cm/inp/*.o 25wt/50wt/12cm/out/
+mv 25wt/70wt/12cm/inp/*.o 25wt/70wt/12cm/out/
+mv 25wt/90wt/12cm/inp/*.o 25wt/90wt/12cm/out/
+mv 50wt/10wt/12cm/inp/*.o 50wt/10wt/12cm/out/
+mv 50wt/30wt/12cm/inp/*.o 50wt/30wt/12cm/out/
+mv 50wt/50wt/12cm/inp/*.o 50wt/50wt/12cm/out/
+mv 50wt/70wt/12cm/inp/*.o 50wt/70wt/12cm/out/
+mv 50wt/90wt/12cm/inp/*.o 50wt/90wt/12cm/out/
+mv 5wt/10wt/12cm/inp/*.o 5wt/10wt/12cm/out/
+mv 5wt/30wt/12cm/inp/*.o 5wt/30wt/12cm/out/
+mv 5wt/50wt/12cm/inp/*.o 5wt/50wt/12cm/out/
+mv 5wt/70wt/12cm/inp/*.o 5wt/70wt/12cm/out/
+mv 5wt/90wt/12cm/inp/*.o 5wt/90wt/12cm/out/
+mv 75wt/10wt/12cm/inp/*.o 75wt/10wt/12cm/out/
+mv 75wt/30wt/12cm/inp/*.o 75wt/30wt/12cm/out/
+mv 75wt/50wt/12cm/inp/*.o 75wt/50wt/12cm/out/
+mv 75wt/70wt/12cm/inp/*.o 75wt/70wt/12cm/out/
+mv 75wt/90wt/12cm/inp/*.o 75wt/90wt/12cm/out/
+
+mv 0wt/10wt/18cm/inp/*.o 0wt/10wt/18cm/out/
+mv 0wt/30wt/18cm/inp/*.o 0wt/30wt/18cm/out/
+mv 0wt/50wt/18cm/inp/*.o 0wt/50wt/18cm/out/
+mv 0wt/70wt/18cm/inp/*.o 0wt/70wt/18cm/out/
+mv 0wt/90wt/18cm/inp/*.o 0wt/90wt/18cm/out/
+mv 10wt/10wt/18cm/inp/*.o 10wt/10wt/18cm/out/
+mv 10wt/30wt/18cm/inp/*.o 10wt/30wt/18cm/out/
+mv 10wt/50wt/18cm/inp/*.o 10wt/50wt/18cm/out/
+mv 10wt/70wt/18cm/inp/*.o 10wt/70wt/18cm/out/
+mv 10wt/90wt/18cm/inp/*.o 10wt/90wt/18cm/out/
+mv 25wt/10wt/18cm/inp/*.o 25wt/10wt/18cm/out/
+mv 25wt/30wt/18cm/inp/*.o 25wt/30wt/18cm/out/
+mv 25wt/50wt/18cm/inp/*.o 25wt/50wt/18cm/out/
+mv 25wt/70wt/18cm/inp/*.o 25wt/70wt/18cm/out/
+mv 25wt/90wt/18cm/inp/*.o 25wt/90wt/18cm/out/
+mv 50wt/10wt/18cm/inp/*.o 50wt/10wt/18cm/out/
+mv 50wt/30wt/18cm/inp/*.o 50wt/30wt/18cm/out/
+mv 50wt/50wt/18cm/inp/*.o 50wt/50wt/18cm/out/
+mv 50wt/70wt/18cm/inp/*.o 50wt/70wt/18cm/out/
+mv 50wt/90wt/18cm/inp/*.o 50wt/90wt/18cm/out/
+mv 5wt/10wt/18cm/inp/*.o 5wt/10wt/18cm/out/
+mv 5wt/30wt/18cm/inp/*.o 5wt/30wt/18cm/out/
+mv 5wt/50wt/18cm/inp/*.o 5wt/50wt/18cm/out/
+mv 5wt/70wt/18cm/inp/*.o 5wt/70wt/18cm/out/
+mv 5wt/90wt/18cm/inp/*.o 5wt/90wt/18cm/out/
+mv 75wt/10wt/18cm/inp/*.o 75wt/10wt/18cm/out/
+mv 75wt/30wt/18cm/inp/*.o 75wt/30wt/18cm/out/
+mv 75wt/50wt/18cm/inp/*.o 75wt/50wt/18cm/out/
+mv 75wt/70wt/18cm/inp/*.o 75wt/70wt/18cm/out/
+mv 75wt/90wt/18cm/inp/*.o 75wt/90wt/18cm/out/
+
+mv 0wt/10wt/30cm/inp/*.o 0wt/10wt/30cm/out/
+mv 0wt/30wt/30cm/inp/*.o 0wt/30wt/30cm/out/
+mv 0wt/50wt/30cm/inp/*.o 0wt/50wt/30cm/out/
+mv 0wt/70wt/30cm/inp/*.o 0wt/70wt/30cm/out/
+mv 0wt/90wt/30cm/inp/*.o 0wt/90wt/30cm/out/
+mv 10wt/10wt/30cm/inp/*.o 10wt/10wt/30cm/out/
+mv 10wt/30wt/30cm/inp/*.o 10wt/30wt/30cm/out/
+mv 10wt/50wt/30cm/inp/*.o 10wt/50wt/30cm/out/
+mv 10wt/70wt/30cm/inp/*.o 10wt/70wt/30cm/out/
+mv 10wt/90wt/30cm/inp/*.o 10wt/90wt/30cm/out/
+mv 25wt/10wt/30cm/inp/*.o 25wt/10wt/30cm/out/
+mv 25wt/30wt/30cm/inp/*.o 25wt/30wt/30cm/out/
+mv 25wt/50wt/30cm/inp/*.o 25wt/50wt/30cm/out/
+mv 25wt/70wt/30cm/inp/*.o 25wt/70wt/30cm/out/
+mv 25wt/90wt/30cm/inp/*.o 25wt/90wt/30cm/out/
+mv 50wt/10wt/30cm/inp/*.o 50wt/10wt/30cm/out/
+mv 50wt/30wt/30cm/inp/*.o 50wt/30wt/30cm/out/
+mv 50wt/50wt/30cm/inp/*.o 50wt/50wt/30cm/out/
+mv 50wt/70wt/30cm/inp/*.o 50wt/70wt/30cm/out/
+mv 50wt/90wt/30cm/inp/*.o 50wt/90wt/30cm/out/
+mv 5wt/10wt/30cm/inp/*.o 5wt/10wt/30cm/out/
+mv 5wt/30wt/30cm/inp/*.o 5wt/30wt/30cm/out/
+mv 5wt/50wt/30cm/inp/*.o 5wt/50wt/30cm/out/
+mv 5wt/70wt/30cm/inp/*.o 5wt/70wt/30cm/out/
+mv 5wt/90wt/30cm/inp/*.o 5wt/90wt/30cm/out/
+mv 75wt/10wt/30cm/inp/*.o 75wt/10wt/30cm/out/
+mv 75wt/30wt/30cm/inp/*.o 75wt/30wt/30cm/out/
+mv 75wt/50wt/30cm/inp/*.o 75wt/50wt/30cm/out/
+mv 75wt/70wt/30cm/inp/*.o 75wt/70wt/30cm/out/
+mv 75wt/90wt/30cm/inp/*.o 75wt/90wt/30cm/out/
+
