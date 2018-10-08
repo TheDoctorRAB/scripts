@@ -17,11 +17,13 @@ script,inputfile=argv
 #
 # set the lines to be edited
 #
-new_lines='annotate_y2=600'
+new_lines='''c      5 - atmosphere
+c      6 - cladding
+c      7 - cladding gap'''
 #
 ###
 #
-old_lines='annotate_y2=6000'
+old_lines='c      5 - atmosphere'
 #
 #######
 #
