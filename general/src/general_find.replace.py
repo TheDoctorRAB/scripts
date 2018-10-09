@@ -17,13 +17,12 @@ script,inputfile=argv
 #
 # set the lines to be edited
 #
-new_lines='''c      5 - atmosphere
-c      6 - cladding
-c      7 - cladding gap'''
+new_lines='''c      7 - cladding gap
+c      8 - boron frits-baryte concrete'''
 #
 ###
 #
-old_lines='c      5 - atmosphere'
+old_lines='c      7 - cladding gap'
 #
 #######
 #
