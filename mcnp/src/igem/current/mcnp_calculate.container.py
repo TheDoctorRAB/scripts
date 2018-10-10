@@ -29,7 +29,8 @@ mcnp_file=open(mcnp_output,'r').readlines()
 #
 for line in mcnp_file:
   if '10     px' in line:
-    surface_10=numpy.float(line[11:18])
+    surface_10=numpy.float(line[10:18])
+    print line,surface_10
 #
 ###
 #
@@ -37,7 +38,8 @@ for line in mcnp_file:
 #
 for line in mcnp_file:
   if '13     px' in line:
-    surface_13=numpy.float(line[11:18])
+    surface_13=numpy.float(line[10:18])
+    print line,surface_13
 #
 ###
 #
@@ -45,7 +47,8 @@ for line in mcnp_file:
 #
 for line in mcnp_file:
   if '14     px' in line:
-    surface_14=numpy.float(line[11:18])
+    surface_14=numpy.float(line[10:18])
+    print line,surface_14
 #
 ###
 #
@@ -53,7 +56,8 @@ for line in mcnp_file:
 #
 for line in mcnp_file:
   if '22     pz' in line:
-    surface_22=numpy.float(line[11:18])
+    surface_22=numpy.float(line[10:18])
+    print line,surface_22
 #
 ###
 #
@@ -61,25 +65,29 @@ for line in mcnp_file:
 #
 for line in mcnp_file:
   if '26     pz' in line:
-    surface_26=numpy.float(line[11:18])
+    surface_26=numpy.float(line[10:18])
+    print line,surface_26
 #
 #######
 #
 # calculations
 # units in cm
 #
-container_thickness=5
+container_thickness=20
 plate_thickness=surface_13-surface_10
 radius=0.5*(surface_14-surface_10)*numpy.sqrt(2)
 volume=(surface_26-surface_22)*(numpy.pi*radius*radius-(surface_14-surface_10)*(surface_14-surface_10))
 #
-print 'plate thickness:',(plate_thickness)
+print 'plate thickness:',plate_thickness
+print 'container thickness:',container_thickness
+print 'radius:',radius
+print 'volume:',volume
 #
 #######
 #
 # prepare new cards for the container
 #
-surface_card_output=open('igem_surface.card_single.assembly_'+str.format('%.1f'%(plate_thickness))+'cm.out','w+')
+surface_card_output=open('igem_surface.card_single.assembly_'+str.format('%.1f'%(container_thickness))+'cm_'+str.format('%.1f'%(plate_thickness))+'cm.out','w+')
 #
 surface_card_output.write(
  'c      ---'+'\n'
