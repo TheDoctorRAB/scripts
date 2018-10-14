@@ -17,8 +17,7 @@ script,mcnp_input=argv
 #
 # set the lines to be edited
 #
-new_lines='''
-c      cladding gap
+new_lines='''c      cladding gap
 c      ---
 M7     2004.70c    -1.0                $He
 c      ---
@@ -44,7 +43,9 @@ M8     1001.66c  -0.005600
 #
 ###
 #
-old_lines='c      cladding gap'
+old_lines='''c      cladding gap
+c      ---
+M7     2004.70c    -1.0                $He'''
 #
 #######
 #
