@@ -17,24 +17,18 @@ script,inputfile=argv
 #
 # set the lines to be edited
 #
-new_lines='''c      tally
-c      ---
-c
-c      ---
-c      surface flux
-c      ---
-c      FC2    west plate
+new_lines='''c      FC2    west plate
 c      F2:N   10
 c      C2     0 1 T
-c
-c      FC12   east plate
-c      F12:N  14
-c      C12    0 1 T
-c
-c      FC22   south plate
+c      ---'''
+new_lines2='c      FC12   east plate'
+new_lines3='c      F12:N  14'
+new_lines4='''c      C12    0 1 T
+c      ---'''
+new_lines5='''c      FC22   south plate
 c      F22:N  16
 c      C22    0 1 T
-c
+c      ---
 c      FC32   north plate
 c      F32:N  20
 c      C32    0 1 T
@@ -61,21 +55,21 @@ C82    0 1 T'''
 #
 ###
 #
-old_lines='''c      tally
-c      ---
-c
-c      ---
-c      surface flux
-c      ---
-FC2    west plate
+old_lines='''FC2    west plate
 F2:N   10
 C2     0 1 T
-c
-FC12   east plate
-F12:N  14
-C12    0 1 T
-c
-FC22   south plate
+c'''
+###
+#
+# there is a weird white space on F12:N that I cannot seem to get around
+#
+old_lines2='FC12   east plate'
+old_lines3='F12:N  14'
+old_lines4='''C12    0 1 T
+c'''
+###
+#
+old_lines5='''FC22   south plate
 F22:N  16
 C22    0 1 T
 c
@@ -103,6 +97,10 @@ tempfile=open(inputfile,'r').read()
 # replace
 #
 tempfile=tempfile.replace(old_lines,new_lines)
+tempfile=tempfile.replace(old_lines2,new_lines2)
+tempfile=tempfile.replace(old_lines3,new_lines3)
+tempfile=tempfile.replace(old_lines4,new_lines4)
+tempfile=tempfile.replace(old_lines5,new_lines5)
 #
 #######
 #
