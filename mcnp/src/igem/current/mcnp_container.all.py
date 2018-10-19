@@ -38,9 +38,9 @@ c
 c      ---
 c      container
 c      ---
-100    c/z 17.159 17.159 50.630                       $container - radius + container thickness and changes with plate thickness
-101    pz  436.0                                      $cap - surface 26 + container thickness
-102    pz -26.0                                       $plug - surface 22 - container thickness'''
+100    c/z 17.159 17.159 84.572                       $container - radius + container thickness and changes with plate thickness
+101    pz  460.0                                      $cap - surface 26 + container thickness
+102    pz -50.0                                       $plug - surface 22 - container thickness'''
 #
 surface_old_lines='c      window for lattice is the fuel block given in 78 - 81'
 #
@@ -50,7 +50,7 @@ surface_old_lines='c      window for lattice is the fuel block given in 78 - 81'
 #
 cell_new_lines='''c      container
 c      ---
-400    8 -3.10 (-10:14:-16:20) -100  22 -26   imp:n,p=1 VOL=4.51992e+05   $container - change volume with plate thickness
+400    8 -3.10 (-10:14:-16:20) -100  22 -26   imp:n,p=1 VOL=2.23713e+06   $container - change volume with plate thickness
 401    8 -3.10                 -100  26 -101  imp:n,p=1                   $container cap
 402    8 -3.10                 -100 -22  102  imp:n,p=1                   $container plug
 c      ---
