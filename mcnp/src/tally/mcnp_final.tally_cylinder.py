@@ -53,11 +53,11 @@ tallyline62_90wt=totlines_90wt-13
 #
 # get tally data
 #
-tally62_10wt=mcnpread_10wt[tallyline32_10wt-1][13:30]
-tally62_30wt=mcnpread_30wt[tallyline32_30wt-1][13:30]
-tally62_50wt=mcnpread_50wt[tallyline32_50wt-1][13:30]
-tally62_70wt=mcnpread_70wt[tallyline32_70wt-1][13:30]
-tally62_90wt=mcnpread_90wt[tallyline32_90wt-1][13:30]
+tally62_10wt=mcnpread_10wt[tallyline62_10wt-1][13:30]
+tally62_30wt=mcnpread_30wt[tallyline62_30wt-1][13:30]
+tally62_50wt=mcnpread_50wt[tallyline62_50wt-1][13:30]
+tally62_70wt=mcnpread_70wt[tallyline62_70wt-1][13:30]
+tally62_90wt=mcnpread_90wt[tallyline62_90wt-1][13:30]
 #
 #######
 #
@@ -78,11 +78,11 @@ tallyline72_90wt=totlines_90wt-13
 #
 # get tally data
 #
-tally72_10wt=mcnpread_10wt[tallyline42_10wt-1][53:70]
-tally72_30wt=mcnpread_30wt[tallyline42_30wt-1][53:70]
-tally72_50wt=mcnpread_50wt[tallyline42_50wt-1][53:70]
-tally72_70wt=mcnpread_70wt[tallyline42_70wt-1][53:70]
-tally72_90wt=mcnpread_90wt[tallyline42_90wt-1][53:70]
+tally72_10wt=mcnpread_10wt[tallyline72_10wt-1][53:70]
+tally72_30wt=mcnpread_30wt[tallyline72_30wt-1][53:70]
+tally72_50wt=mcnpread_50wt[tallyline72_50wt-1][53:70]
+tally72_70wt=mcnpread_70wt[tallyline72_70wt-1][53:70]
+tally72_90wt=mcnpread_90wt[tallyline72_90wt-1][53:70]
 #
 #######
 #
@@ -103,11 +103,11 @@ tallyline82_90wt=totlines_90wt-13
 #
 # get tally data
 #
-tally82_10wt=mcnpread_10wt[tallyline52_10wt-1][93:110]
-tally82_30wt=mcnpread_30wt[tallyline52_30wt-1][93:110]
-tally82_50wt=mcnpread_50wt[tallyline52_50wt-1][93:110]
-tally82_70wt=mcnpread_70wt[tallyline52_70wt-1][93:110]
-tally82_90wt=mcnpread_90wt[tallyline52_90wt-1][93:110]
+tally82_10wt=mcnpread_10wt[tallyline82_10wt-1][93:110]
+tally82_30wt=mcnpread_30wt[tallyline82_30wt-1][93:110]
+tally82_50wt=mcnpread_50wt[tallyline82_50wt-1][93:110]
+tally82_70wt=mcnpread_70wt[tallyline82_70wt-1][93:110]
+tally82_90wt=mcnpread_90wt[tallyline82_90wt-1][93:110]
 #
 #######
 #
