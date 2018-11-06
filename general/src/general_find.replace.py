@@ -17,12 +17,13 @@ script,inputfile=argv
 #
 # set the lines to be edited
 #
-new_lines='''c      7 - cladding gap
-c      8 - boron frits-baryte concrete'''
+new_lines='''annotate_title4='20cm thick concrete'
+'''
 #
 ###
 #
-old_lines='c      7 - cladding gap'
+old_lines='''annotate_title4='3cm thick concrete'
+'''
 #
 #######
 #
