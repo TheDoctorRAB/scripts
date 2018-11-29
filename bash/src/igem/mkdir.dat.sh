@@ -5,7 +5,6 @@ mkdir -p 3cm/50wt/dat/{raw,dose-rate}
 mkdir -p 3cm/5wt/dat/{raw,dose-rate}
 mkdir -p 3cm/75wt/dat/{raw,dose-rate}
 
-
 mkdir -p 5cm/0wt/dat/{raw,dose-rate}
 mkdir -p 5cm/10wt/dat/{raw,dose-rate}
 mkdir -p 5cm/25wt/dat/{raw,dose-rate}
@@ -34,3 +33,4 @@ mkdir -p 20cm/25wt/dat/{raw,dose-rate}
 mkdir -p 20cm/50wt/dat/{raw,dose-rate}
 mkdir -p 20cm/5wt/dat/{raw,dose-rate}
 mkdir -p 20cm/75wt/dat/{raw,dose-rate}
+

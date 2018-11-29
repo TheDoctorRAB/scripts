@@ -17,13 +17,11 @@ script,inputfile=argv
 #
 # set the lines to be edited
 #
-new_lines='''annotate_title4='20cm thick concrete'
-'''
+new_lines='annotate_y4=0.15'
 #
 ###
 #
-old_lines='''annotate_title4='3cm thick concrete'
-'''
+old_lines='annotate_y4=1.1'
 #
 #######
 #
