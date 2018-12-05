@@ -40,7 +40,7 @@ python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_l3030_north.py
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_l3030_cap.py
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_l3030_plug.py
-cd ../
+cd ../../
 
 
 cd 0wt/
@@ -80,7 +80,7 @@ python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_h5060_north.py
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_h5060_cap.py
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_h5060_plug.py
-cd ../
+cd ../../
 
 cd 0wt/
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_l3030_bottom.py
@@ -106,7 +106,7 @@ cd ../75wt/
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_l3030_bottom.py
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_l3030_top.py
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_l3030_surface.py
-cd ../
+cd ../../
 
 cd 0wt/
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_h5060_bottom.py
@@ -132,5 +132,5 @@ cd ../75wt/
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_h5060_bottom.py
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_h5060_top.py
 python ~/github/scripts/general/src/general_find.replace.py plot_all.in.one_cask.thickness_dose.rate_h5060_surface.py
-cd ../
+cd ../../
 
