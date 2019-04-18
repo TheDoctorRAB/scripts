@@ -13,6 +13,7 @@
 # So pandas would not be able to do any statistics on the columns
 # It was because small values did not contain the 'E' for scientific notation and was read as NaN; i.e., 1.0133-114
 # Still can't get cutoffs right in SCALE
+# The 'extract' files are the datafiles, but the first 5 lines and the last 2 lines have to be deleted first
 #
 #######
 #
