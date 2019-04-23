@@ -17,9 +17,9 @@
 # imports
 import os
 import numpy
-#import pyne
+import pyne
 from sys import argv
-#from pyne import nucname - installation problems with pyne
+from pyne import nucname
 script,datafile,timefile=argv
 #
 #######
@@ -35,7 +35,7 @@ time=numpy.genfromtxt(timefile,dtype=str) #read in as string because time step i
 # weight fraction cutoff
 # after calculating actual weight fraction
 #
-cutoff=1E-06
+cutoff=1E-08
 #
 #######
 #
@@ -43,14 +43,15 @@ cutoff=1E-06
 #
 rows=labels.shape[0]
 columns=raw_data.shape[1]
+print rows,columns
 #
 #######
 #
 # compute weight fraction
 #
-weight_fraction=numpy.zeros((rows-2,columns))
+weight_fraction=numpy.zeros((rows-1,columns))
 #
-for i in range (0,rows-2):
+for i in range (0,rows-1):
   for j in range (0,columns):
      weight_fraction[i,j]=raw_data[i,j]*(-1)*1E-06 #negative is added here because MCNP uses (-) for weight fraction
 #
@@ -58,8 +59,8 @@ for i in range (0,rows-2):
 #
 # change to ZAID
 #
-#for i in range (0,rows):
-#  labels[i]=str(pyne.nucname.zzzaaa(labels[i]))+'.70c'
+for i in range (0,rows-1):
+  labels[i]=str(pyne.nucname.zzzaaa(labels[i]))+'.70c'
 #
 #######
 #
@@ -67,7 +68,7 @@ for i in range (0,rows-2):
 #
 for j in range(0,columns):
   material_card=open(os.path.splitext(datafile)[0]+'_material.card_'+time[j]+'.out','w+') #open material card
-  for i in range(0,(rows-2)):
+  for i in range(0,(rows-1)):
    if(abs(weight_fraction[i,j])>cutoff):
     material_card.write('        '+str.format('%s'%labels[i])+'     '+str.format('%.6e'%weight_fraction[i,j])+'\n')
 #

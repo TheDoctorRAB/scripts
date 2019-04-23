@@ -41,7 +41,7 @@ time_data=numpy.genfromtxt(timefile,dtype=float)
 #
 rows=labels.shape[0]
 columns=raw_data.shape[1]
-#print rows,columns
+print rows,columns
 #
 #######
 #
