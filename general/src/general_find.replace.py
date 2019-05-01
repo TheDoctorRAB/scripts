@@ -17,8 +17,7 @@ script,mcnp_input=argv
 #
 # set the lines to be edited
 #
-new_lines1='''c      ---
-c      source
+new_lines1='''c      source
 c      ---
 c
 c      ---
@@ -716,8 +715,7 @@ c      ---'''
 #
 ###
 #
-old_lines1='''c      ---
-c      source
+old_lines1='''c      source
 c      ---
 c
 c      ---
@@ -1320,6 +1318,7 @@ mcnp_tempfile=open(mcnp_input,'r').read()
 # replace
 #
 mcnp_tempfile=mcnp_tempfile.replace(old_lines1,new_lines1)
+print 'replace'
 #
 #######
 #
