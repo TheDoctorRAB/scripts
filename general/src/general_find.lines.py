@@ -32,11 +32,11 @@ tempfile=open(input_file,'r').readlines()
 #
 for line_number1,line in enumerate(tempfile,1): # use 1 to give vim line number
     if find_lines1 in line:
-        print find_lines1,'   ',line_number1
+        print line_number1,'          'find_lines1
 ###
 for line_number2,line in enumerate(tempfile,1): # use 1 to give vim line number
     if find_lines2 in line:
-        print find_lines2,'   ',line_number2
+        print line_number2,'          'find_lines2
 #
 #######
 #
