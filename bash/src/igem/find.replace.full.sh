@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 cd 0wt/
 cd 10wt/
 cd 1.5cm/inp
