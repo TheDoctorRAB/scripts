@@ -8,8 +8,15 @@
 #
 # imports
 #
+import os
 from sys import argv
 script,input_file=argv
+#
+#######
+#
+# get current directory
+#
+dir_path=os.getcwd()
 #
 #######
 #
@@ -28,15 +35,36 @@ tempfile=open(input_file,'r').readlines()
 #
 #######
 #
+# open file to write line numbers
+#
+line_number_output=open('line_numbers.out','a+')
+#
+#######
+#
 # find line numbers
 #
-for line_number1,line in enumerate(tempfile,1): # use 1 to give vim line number
+for find_line_number1,line in enumerate(tempfile,1): # use 1 to give vim line number
     if find_lines1 in line:
-        print line_number1,'          ',find_lines1
+        print find_line_number1,'          ',find_lines1
+        line_number1=find_line_number1
 ###
-for line_number2,line in enumerate(tempfile,1): # use 1 to give vim line number
+for find_line_number2,line in enumerate(tempfile,1): # use 1 to give vim line number
     if find_lines2 in line:
-        print line_number2,'          ',find_lines2
+        print find_line_number2,'          ',find_lines2
+        line_number2=find_line_number2
+#
+#######
+#
+# write line numbers
+#
+line_number_output.write(str.format('%s'%dir_path)+'\t'+str.format('%.0f'%line_number1)+'\t'+str.format('%.0f'%line_number2)+'\n')
+#
+#
+#######
+#
+# close file
+#
+line_number_output.close()
 #
 #######
 #
