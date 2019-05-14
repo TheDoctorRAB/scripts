@@ -191,7 +191,7 @@ mcnp_tempfile=open(mcnp_input,'r').read()
 # replace
 #
 mcnp_tempfile=mcnp_tempfile.replace(old_lines1,new_lines1)
-mcnp_tempfile=mcnp_tempfile.replace(old_lines2,new_lines2)
+# mcnp_tempfile=mcnp_tempfile.replace(old_lines2,new_lines2)
 #
 #######
 #
