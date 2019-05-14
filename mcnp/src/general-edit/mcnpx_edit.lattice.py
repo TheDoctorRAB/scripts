@@ -16,6 +16,7 @@ script,mcnp_input=argv
 #######
 #
 # set the lines to be edited
+# remember to change the 104 cell depending on the backfill material
 #
 new_lines1='''c 104    5 -0.001205  -93 94 -95 96       u=2 imp:n,p=1                            $air cell with no fuel
 c 104    3 -1.00      -93 94 -95 96       u=2 imp:n,p=1                            $water cell with no fuel
