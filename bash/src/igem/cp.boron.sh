@@ -35,6 +35,6 @@ cp 10wt/90wt/30cm/inp/single.assembly_7815.inp 75wt/90wt/30cm/inp/
 
 10 1236
 30 1243
-50 1250 
+50 1250
 70 1257
 90 1264
