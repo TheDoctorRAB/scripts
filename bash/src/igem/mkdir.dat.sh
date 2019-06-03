@@ -1,36 +1,13 @@
-mkdir -p 3cm/0wt/dat/{raw,dose-rate}
-mkdir -p 3cm/10wt/dat/{raw,dose-rate}
-mkdir -p 3cm/25wt/dat/{raw,dose-rate}
-mkdir -p 3cm/50wt/dat/{raw,dose-rate}
-mkdir -p 3cm/5wt/dat/{raw,dose-rate}
-mkdir -p 3cm/75wt/dat/{raw,dose-rate}
-
-mkdir -p 5cm/0wt/dat/{raw,dose-rate}
-mkdir -p 5cm/10wt/dat/{raw,dose-rate}
-mkdir -p 5cm/25wt/dat/{raw,dose-rate}
-mkdir -p 5cm/50wt/dat/{raw,dose-rate}
-mkdir -p 5cm/5wt/dat/{raw,dose-rate}
-mkdir -p 5cm/75wt/dat/{raw,dose-rate}
-
-mkdir -p 10cm/0wt/dat/{raw,dose-rate}
-mkdir -p 10cm/10wt/dat/{raw,dose-rate}
-mkdir -p 10cm/25wt/dat/{raw,dose-rate}
-mkdir -p 10cm/50wt/dat/{raw,dose-rate}
-mkdir -p 10cm/5wt/dat/{raw,dose-rate}
-mkdir -p 10cm/75wt/dat/{raw,dose-rate}
-
-mkdir -p 15cm/0wt/dat/{raw,dose-rate}
-mkdir -p 15cm/10wt/dat/{raw,dose-rate}
-mkdir -p 15cm/25wt/dat/{raw,dose-rate}
-mkdir -p 15cm/50wt/dat/{raw,dose-rate}
-mkdir -p 15cm/5wt/dat/{raw,dose-rate}
-mkdir -p 15cm/75wt/dat/{raw,dose-rate}
-
-
-mkdir -p 20cm/0wt/dat/{raw,dose-rate}
-mkdir -p 20cm/10wt/dat/{raw,dose-rate}
-mkdir -p 20cm/25wt/dat/{raw,dose-rate}
-mkdir -p 20cm/50wt/dat/{raw,dose-rate}
-mkdir -p 20cm/5wt/dat/{raw,dose-rate}
-mkdir -p 20cm/75wt/dat/{raw,dose-rate}
-
+#!/usr/bin/bash
+mkdir 0wt/dat
+mkdir 0wt/plt
+mkdir 10wt/dat
+mkdir 10wt/plt
+mkdir 25wt/dat
+mkdir 25wt/plt
+mkdir 50wt/dat
+mkdir 50wt/plt
+mkdir 5wt/dat
+mkdir 5wt/plt
+mkdir 75wt/dat
+mkdir 75wt/plt
