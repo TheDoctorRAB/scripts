@@ -9,7 +9,7 @@
 #
 # imports
 import os
-import numpy
+# import numpy
 from sys import argv
 script,mcnpout_10wt,mcnpout_30wt,mcnpout_50wt,mcnpout_70wt,mcnpout_90wt=argv
 #
