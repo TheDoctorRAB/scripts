@@ -18,11 +18,11 @@ script,mcnp_input=argv
 # set the lines to be edited
 # there are a set of comibinations for bare or concrete design
 #
-new_lines1='sub_mcnpx_2.7.0 -i single.assembly_7815.inp -w 02:15:00 -n16 -P iuc'
+new_lines1="annotate_title2='Air-Glass backfill'"
 #
 ###
 #
-old_lines1='python ~/github/scripts/general/src/general_find.replace.py single.assembly_7815.inp'
+old_lines1="annotate_title2='Air backfill'"
 #
 #######
 #
