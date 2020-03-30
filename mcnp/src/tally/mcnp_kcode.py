@@ -27,7 +27,7 @@ i=0
 #
 for line in mcnp_file:
   i=i+1
-  if '  | the final estimated' in line:
+  if 'the final estimated' in line:
     print line
 #
 #######
