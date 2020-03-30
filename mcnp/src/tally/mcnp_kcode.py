@@ -16,10 +16,6 @@ mcnp_file=open(mcnp_output,'r').readlines()
 #######
 #
 #######
-# get and print current directory
-dir_path=os.getcwd()
-print dir_path
-#######
 #
 ####### initialize the counter
 i=0
